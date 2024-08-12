@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|c:\\users\\mchla\\onedrive\\documentos\\proyectos\\blazorapp.warehouse\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|c:\\users\\mchla\\onedrive\\documentos\\proyectos\\blazorapp.warehouse\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|solutionrelative:components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|c:\\users\\mchla\\onedrive\\documentos\\proyectos\\blazorapp.warehouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|c:\\users\\mchla\\onedrive\\documentos\\proyectos\\blazorapp.warehouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D01D47-2CCB-4925-AE55-7E1678B65918}|BlazorApp.WareHouse.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvxcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-12T15:50:19.805Z",
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Components\\Account\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "Components\\Account\\Pages\\Register.razor",
+              "ToolTip": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Components\\Account\\Pages\\Register.razor",
+              "RelativeToolTip": "Components\\Account\\Pages\\Register.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T18:14:29.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T18:06:39.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\BlazorApp.WareHouse\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAuwCEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T17:23:19.772Z",
               "EditorCaption": ""
             }
           ]

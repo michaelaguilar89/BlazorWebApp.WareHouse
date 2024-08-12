@@ -1,0 +1,173 @@
+﻿@page "/stores/list"
+@using WareHouseManager.Razor.Dto_s
+@using WareHouseManager.Razor.Service
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="row ">
+            <div class="col-md-6 mx-auto 0">
+                <h3 class="text-center text-primary">List Of Products On Storage (result.Count()  )</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 mx-auto 0">
+                @if (Messages != null)
+                {
+                    <div class="text-danger">Status : Messages</div>
+                }
+
+
+                <div class="searchData text-center p-3">
+                    <form asp-page="/StorePages/Index" method="get">
+                        <p>
+                            <input type="date" name="searchDateValue" value="searchDate" />
+                            <input type="text" placeholder="Search...." name="SearchString" value="search" />
+                            <input type="submit" value="Search" class="btn btn-primary" /> |
+                            <a asp-page="/StorePages/Index">Back to full list</a>
+                        </p>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 text-center">
+
+
+
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Batch</th>
+                        <th scope="col">Total Quantity</th>
+                        <th scope="col">Actual Quantity</th>
+                        <th scope="col">Creation Time</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">User Create</th>
+                        <th scope="col">Modification Time</th>
+                        <th scope="col">User Modification</th>
+                        <th scope="col">Comments</th>
+                        <th scope="col">Actions</th>
+                        <th scope="col"><a asp-page="stores/create" class="btn btn-primary">New</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (result == null || result.Count()==0)
+                    {
+                        <div class="text-danger">Data Not Found!</div>
+                    }
+                    else
+                        @foreach (var i in result)
+                        {
+                            <tr>
+                                <th scope="row">@i.ProductName</th>
+                                <td>@i.Batch</td>
+                                <td>@i.TotalQuantity</td>
+                                <td>@i.ActualQuantity</td>
+                                <td>@i.CreationTime</td>
+                                <td>@i.Description</td>
+                                <td>@i.UserNameCreation</td>
+                                <td>@i.ModificationAt</td>
+                                <td>@i.UserNameModification</td>
+                                <td>@i.Comments</td>
+                                <td>
+                                    <a asp-page="/StorePages/Details" asp-route-id="@i.Id">Details</a>
+                                    <a asp-page="/StorePages/Edit" asp-route-id="@i.Id">Edit</a>
+                                </td>
+                            </tr>
+                        }
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@code {
+
+
+    [Inject]
+    protected StoreService _storeService { get; set; }
+    // [BindProperty]
+    public string Messages { get; set; }
+   
+    public List<ResultStoreDto> result { get; set; }
+    [Parameter]
+    public string? search { get; set; }
+    [Parameter]
+    public int records { get; set; } = 0;
+    [Parameter]
+    public DateTime? searchDate { get; set; }
+
+
+    public async Task OnInitializedAsync(string? searchString, DateTime? searchDateValue)
+    {
+
+
+        try
+        {
+
+            searchDate = searchDateValue;
+            search = searchString;
+            Console.WriteLine("Store Pages -Index : searchString : " + search + ", searchDate : " + searchDate);
+
+            if (searchDate != null && search != null)
+            {
+                result = await _storeService.getStoresByNameOrBatchAndDate(searchString, searchDate);
+
+            }
+            else
+            {
+                if (searchDateValue != null)
+                {
+
+                    result = await _storeService.getStoresByDate(searchDate);
+                }
+                else
+                {
+                    if (searchString != null)
+                    {
+
+                        result = await _storeService.getStoresByNameOrBatch(search);
+
+                    }
+                    else
+                    {
+                        result = await _storeService.GetStoresWithUsernamesAsync();
+                    }
+                }
+
+
+
+
+            }
+
+
+            if (result == null)
+            {
+                Messages = "Data not found, try agin...";
+
+            }
+            else
+            {
+                // records = result.Count();
+            }
+
+           
+        }
+        catch (Exception e)
+        {
+            Messages = "Error : " + e.Message;
+          
+        }
+    }
+}

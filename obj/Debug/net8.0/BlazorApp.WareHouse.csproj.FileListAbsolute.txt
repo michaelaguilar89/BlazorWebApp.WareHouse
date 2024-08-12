@@ -140,3 +140,6 @@ C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\obj\Debug\net8.
 C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\obj\Debug\net8.0\BlazorApp.WareHouse.pdb
 C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\obj\Debug\net8.0\BlazorApp.WareHouse.genruntimeconfig.cache
 C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\obj\Debug\net8.0\ref\BlazorApp.WareHouse.dll
+C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\obj\Debug\net8.0\BlazorApp.WareHouse.sourcelink.json
+C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\bin\Debug\net8.0\Npgsql.dll
+C:\Users\mchla\OneDrive\Documentos\Proyectos\BlazorApp.WareHouse\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
